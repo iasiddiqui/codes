@@ -1,21 +1,28 @@
-//User function Template for Java
 
+import java.util.Scanner;
 
-// Function to check if number is even or odd
-class EvenOdd {
-    // 
-	 static void evenOdd (int a,int b) 
-	 {
-		//Your code here
-		if(a%2==0) {
-		    System.out.println(a);
-		    System.out.println(b);
+class Check {
+	int number;
+
+	public void getData() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any number");
+		number = sc.nextInt();
+	}
+
+	public void isOdd() {
+		if (number % 2 == 0) {
+			System.out.println("Given number is Even");
+		} else {
+			System.out.println("Given number is Odd");
 		}
-		else {
-		    System.out.println(b);
-		    System.out.println(a);
-		}
-	     
-	 }
+	}
 }
 
+public class IsEven {
+	public static void main(String[] args) {
+		Check ob = new Check();
+		ob.getData();
+		ob.isOdd();
+	}
+}
