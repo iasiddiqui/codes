@@ -2,7 +2,7 @@
 
 
 // Function to check if number is even or odd
-class Geeks {
+class EvenOdd {
     // 
 	 static void evenOdd (int a,int b) 
 	 {
